@@ -1,6 +1,6 @@
 {
-  "name": "angular-cesium",
-  "version": "0.0.75",
+  "name": "@ccs/angular-cesium",
+  "version": "1.0.0",
   "license": "MIT",
   "description": "Angular library for working with Cesium.",
   "repository": "https://github.com/articodeltd/angular-cesium",
@@ -10,6 +10,9 @@
     "Angular Cesium",
     "Angular2 Cesium"
   ],
+  "config": {
+    "registry": "https://pkgs.dev.azure.com/trmb-ccss/Civil/_packaging/ccs-npm-packages/npm/registry/"
+  },
   "scripts": {
     "ng": "ng",
     "demo:start": "ng serve angular-cesium-demo",
@@ -30,7 +33,6 @@
     "docs:compile": "rimraf docs && compodoc -p projects/angular-cesium/src/lib/tsconfig.compodoc.json --theme stripe -d docs -n \"Angular Cesium\"",
     "docs:push": "npm run docs:compile && npm run gh-pages && rimraf docs"
   },
-  "private": true,
   "dependencies": {
     "@angular/animations": "^13.3.11",
     "@angular/cdk": "^13.3.9",
